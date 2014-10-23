@@ -21,9 +21,9 @@ class Instructor < Person
 	end
 end
 
-Chris = Instructor.new("Chris")
+chris = Instructor.new("Chris")
 
-Christina = Student.new("Christina")
+christina = Student.new("Christina")
 
 Chris.greeting
 
