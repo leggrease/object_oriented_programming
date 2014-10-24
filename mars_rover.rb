@@ -72,13 +72,13 @@ puts "Please enter the world size in the following format"
 puts "Format: x y.  No greater than 9 for either value."
 world_height, world_width = prompt.split(" ").map { |s| s.to_i } #setting the size of plateu (HOLY SHIT THIS IS COOL)
 mars_rover = Rover.new(world_width, world_height)
-loop do
-	puts "enter the starting position of the rover"
+	puts "enter the starting position of the rover or press enter to quit"
 	x, y, direction = prompt.split(" ")
 	x = x.to_i
 	y = y.to_i
 	mars_rover.set_position(x, y, direction)
-	puts "enter rover commands pls"
+loop do
+	puts "enter rover commands pls or press enter to quit"
 	instructions = prompt.upcase
 	instructions.each_char do |character|
 		mars_rover.read_instruction(character)
